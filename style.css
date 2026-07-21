@@ -753,3 +753,60 @@ html, body {
     font-size: 11.5px;
   }
 }
+
+
+.filter-item input[type="checkbox"],
+.filter-item input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  border: 1.5px solid var(--land-border);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+}
+
+.filter-item input[type="radio"] {
+  border-radius: 50%;
+}
+
+.filter-item input[type="checkbox"]:checked {
+  background: var(--swatch-color, var(--accent));
+  border-color: var(--swatch-color, var(--accent));
+}
+
+.filter-item input[type="radio"]:checked {
+  background: #fff;
+  border-color: var(--accent);
+}
+
+.filter-item input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.filter-item input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.filter-item input[type="checkbox"]:focus-visible,
+.filter-item input[type="radio"]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}

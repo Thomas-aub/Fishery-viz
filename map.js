@@ -150,6 +150,12 @@ function imageFootprintToGeoJson(coords) {
 // STATE
 // =============================================================================
 
+let objects = []; // raw detections, WGS84 lon/lat
+let images = []; // image footprints with precomputed geometry + area
+let activeView = "density"; // "density" | "points"
+let activeClassIds = new Set(Object.keys(CLASSES).map(Number));
+let activeProximityFilter = "all"; // "all" | "veryclose" | "close" | "fareaway"
+
 const container = document.getElementById("map-container");
 const svg = d3.select("#map");
 const tooltip = d3.select("#tooltip");
@@ -167,11 +173,6 @@ let projection = null;
 let path = null;
 let zoomBehavior = null;
 let ports = [];
-
-let objects = []; // raw detections, WGS84 lon/lat
-let images = []; // image footprints with precomputed geometry + area
-let activeView = "density"; // "density" | "points"
-let activeClassIds = new Set(Object.keys(CLASSES).map(Number));
 
 function getSize() {
   const rect = container.getBoundingClientRect();
@@ -225,11 +226,19 @@ async function loadData() {
   return true;
 }
 
-// Recomputes everything that depends on the active class filter: per-image
-// counts/densities and the flat list of visible points. Called once on load
-// and again whenever a filter checkbox changes.
+// Recomputes everything that depends on active class and proximity filters
 function recomputeFilteredData() {
-  const visibleObjects = objects.filter((o) => activeClassIds.has(o.class_id));
+  const visibleObjects = objects.filter((o) => {
+    // 1. Filter by detected classes
+    if (!activeClassIds.has(o.class_id)) return false;
+
+    // 2. Filter by proximity radio option (must be true)
+    if (activeProximityFilter !== "all") {
+      if (!o[activeProximityFilter]) return false;
+    }
+
+    return true;
+  });
 
   const countsByImage = new Map();
   for (const obj of visibleObjects) {
@@ -327,6 +336,13 @@ function buildClassFilter() {
     .text((d) => (countsByClass.get(d.id) || 0).toLocaleString());
 }
 
+function initProximityFilter() {
+  d3.selectAll('input[name="proximity"]').on("change", function () {
+    activeProximityFilter = this.value;
+    renderActiveView();
+  });
+}
+
 // =============================================================================
 // TOOLTIPS
 // =============================================================================
@@ -397,6 +413,10 @@ function renderDensityView() {
 function renderPointsView(visibleObjects) {
   gBoxes.selectAll("path").attr("fill-opacity", 0).style("pointer-events", "none");
 
+  // Get active zoom scale factor k so points don't render huge when re-rendered while zoomed in
+  const transform = d3.zoomTransform(svg.node());
+  const k = transform ? transform.k : 1;
+
   gPoints
     .selectAll("circle")
     .data(visibleObjects)
@@ -404,7 +424,8 @@ function renderPointsView(visibleObjects) {
     .attr("class", "detection-point")
     .attr("cx", (d) => projection([d.coords.x, d.coords.y])[0])
     .attr("cy", (d) => projection([d.coords.x, d.coords.y])[1])
-    .attr("r", POINT_RADIUS)
+    .attr("r", POINT_RADIUS / k)
+    .attr("stroke-width", 0.5 / k)
     .attr("fill", (d) => CLASSES[d.class_id]?.color ?? "#999");
 
   buildPointsLegend();
@@ -505,6 +526,7 @@ async function init() {
   }
 
   buildClassFilter();
+  initProximityFilter();
   initViewSwitch();
   renderActiveView();
 
@@ -588,10 +610,17 @@ function redraw() {
   gBasemapCountries.selectAll("path.country-border").attr("d", path);
   gBasemapProvinces.selectAll("path").attr("d", path);
   gBoxes.selectAll("path").attr("d", (d) => path(d.geojson));
+
+  const transform = d3.zoomTransform(svg.node());
+  const k = transform ? transform.k : 1;
+
   gPoints
     .selectAll("circle")
     .attr("cx", (d) => projection([d.coords.x, d.coords.y])[0])
-    .attr("cy", (d) => projection([d.coords.x, d.coords.y])[1]);
+    .attr("cy", (d) => projection([d.coords.x, d.coords.y])[1])
+    .attr("r", POINT_RADIUS / k)
+    .attr("stroke-width", 0.5 / k);
+
   gPorts.selectAll("g.port").attr("transform", (d) => {
     const [x, y] = projection([d.lon, d.lat]);
     return `translate(${x},${y})`;

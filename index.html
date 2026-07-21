@@ -46,8 +46,27 @@
   <aside id="class-filter" aria-label="Filter by detected class">
     <div class="filter-label">Detected classes</div>
     <div id="class-filter-list"><!-- populated at runtime from the data --></div>
+
+    <div class="filter-label" style="margin-top: 14px; border-top: 1px solid var(--panel-border); padding-top: 12px;">Coastline Proximity</div>
+    <div id="proximity-filter-list">
+      <label class="filter-item">
+        <input type="radio" name="proximity" value="all" checked>
+        <span class="filter-name">All distances</span>
+      </label>
+      <label class="filter-item">
+        <input type="radio" name="proximity" value="50m">
+        <span class="filter-name">Very close (&le;50m)</span>
+      </label>
+      <label class="filter-item">
+        <input type="radio" name="proximity" value="100m">
+        <span class="filter-name">Close (&le;100m)</span>
+      </label>
+      <label class="filter-item">
+        <input type="radio" name="proximity" value="1km">
+        <span class="filter-name">Far away (&le;1km)</span>
+      </label>
+    </div>
   </aside>
-</div>
 
 
 <!-- Scrollytelling panel -->
