@@ -810,3 +810,26 @@ html, body {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
+
+#confidence-slider {
+  appearance: none;
+  height: 6px;
+  background: var(--land-border);
+  border-radius: 3px;
+  outline: none;
+  margin-top: 4px;
+}
+
+#confidence-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+#confidence-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}

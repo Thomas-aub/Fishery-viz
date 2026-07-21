@@ -154,7 +154,8 @@ let objects = []; // raw detections, WGS84 lon/lat
 let images = []; // image footprints with precomputed geometry + area
 let activeView = "density"; // "density" | "points"
 let activeClassIds = new Set(Object.keys(CLASSES).map(Number));
-let activeProximityFilter = "all"; // "all" | "veryclose" | "close" | "fareaway"
+let activeProximityFilter = "all"; // "all" | "50m" | "100m" | "1km"
+let minConfidence = 0; // Minimum confidence filter threshold
 
 const container = document.getElementById("map-container");
 const svg = d3.select("#map");
@@ -226,13 +227,15 @@ async function loadData() {
   return true;
 }
 
-// Recomputes everything that depends on active class and proximity filters
 function recomputeFilteredData() {
   const visibleObjects = objects.filter((o) => {
     // 1. Filter by detected classes
     if (!activeClassIds.has(o.class_id)) return false;
 
-    // 2. Filter by proximity radio option (must be true)
+    // 2. Filter by minimum confidence threshold[cite: 20]
+    if (o.confidence !== undefined && o.confidence < minConfidence) return false;
+
+    // 3. Filter by proximity radio option (must be true)
     if (activeProximityFilter !== "all") {
       if (!o[activeProximityFilter]) return false;
     }
@@ -339,6 +342,20 @@ function buildClassFilter() {
 function initProximityFilter() {
   d3.selectAll('input[name="proximity"]').on("change", function () {
     activeProximityFilter = this.value;
+    renderActiveView();
+  });
+}
+
+function initConfidenceFilter() {
+  const slider = document.getElementById("confidence-slider");
+  const valueDisplay = document.getElementById("confidence-value");
+  if (!slider) return;
+
+  slider.addEventListener("input", function () {
+    minConfidence = parseFloat(this.value);
+    if (valueDisplay) {
+      valueDisplay.textContent = minConfidence.toFixed(2);
+    }
     renderActiveView();
   });
 }
@@ -526,6 +543,7 @@ async function init() {
   }
 
   buildClassFilter();
+  initConfidenceFilter();
   initProximityFilter();
   initViewSwitch();
   renderActiveView();

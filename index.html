@@ -47,6 +47,15 @@
     <div class="filter-label">Detected classes</div>
     <div id="class-filter-list"><!-- populated at runtime from the data --></div>
 
+    <div class="filter-label" style="margin-top: 14px; border-top: 1px solid var(--panel-border); padding-top: 12px;">Confidence Threshold</div>
+    <div class="filter-slider-container" style="padding-top: 6px; padding-bottom: 4px;">
+      <div style="display: flex; justify-content: space-between; font-size: 11.5px; color: var(--ink-dim); margin-bottom: 4px;">
+        <span>Threshold</span>
+        <span id="confidence-value" style="font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink);">0.00</span>
+      </div>
+      <input type="range" id="confidence-slider" min="0" max="1" step="0.01" value="0" style="width: 100%; accent-color: var(--accent); cursor: pointer;">
+    </div>
+
     <div class="filter-label" style="margin-top: 14px; border-top: 1px solid var(--panel-border); padding-top: 12px;">Coastline Proximity</div>
     <div id="proximity-filter-list">
       <label class="filter-item">
