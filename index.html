@@ -12,7 +12,7 @@
 <nav id="top-nav">
   <div class="nav-brand">
     <span class="nav-brand-mark">&#9673;</span>
-    <span class="nav-brand-text">Artisanal Fishing Density &mdash; Madagascar</span>
+    <span class="nav-brand-text">Artisanal Fishing Density &dash; Madagascar</span>
   </div>
   <div class="nav-links">
     <button class="nav-btn active" id="nav-map" type="button">Map by images</button>
@@ -35,7 +35,20 @@
     <button id="zoom-reset" aria-label="Reset zoom">&#8634;</button>
     <button id="zoom-out" aria-label="Zoom out">&minus;</button>
   </div>
+
+  <!-- View switch: Point View (raw detections) vs Density View (per-image choropleth) -->
+  <div id="view-switch" role="group" aria-label="Map view mode">
+    <button id="view-points" class="view-switch-btn" type="button" aria-pressed="false">Point view</button>
+    <button id="view-density" class="view-switch-btn active" type="button" aria-pressed="true">Density view</button>
+  </div>
+
+  <!-- Class filter: toggles which detected classes feed both views -->
+  <aside id="class-filter" aria-label="Filter by detected class">
+    <div class="filter-label">Detected classes</div>
+    <div id="class-filter-list"><!-- populated at runtime from the data --></div>
+  </aside>
 </div>
+
 
 <!-- Scrollytelling panel -->
 <div id="scrolly" class="hidden">
@@ -46,7 +59,7 @@
       <h2>An invisible fleet</h2>
       <p>
         Along Madagascar's coasts, tens of thousands of wooden pirogues leave shore
-        before dawn every day. They carry most of the country's small-scale catch &mdash;
+        before dawn every day. They carry most of the country's small-scale catch &dash;
         yet almost none of them appear in any official registry.
       </p>
       <p>
@@ -67,7 +80,7 @@
       <p>
         A custom <strong>YOLO26</strong> oriented-bounding-box detection pipeline scans
         each scene to locate and count vessels automatically, converting raw imagery
-        into a density map of fishing activity &mdash; box by box, kilometre by kilometre.
+        into a density map of fishing activity &dash; box by box, kilometre by kilometre.
       </p>
     </section>
 

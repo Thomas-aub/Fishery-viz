@@ -2,6 +2,7 @@
     {
         "filename": "IMG_PNEO4_STD_202312020659547_PANSHARP_ORT_PWOI_000373588_5_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.1305,
         "coordinates": {
             "top_left": [
                 406824.0,
@@ -24,6 +25,7 @@
     {
         "filename": "IMG_PNEO4_STD_202312020659547_PANSHARP_ORT_PWOI_000373588_5_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.8127,
         "coordinates": {
             "top_left": [
                 406824.0,
@@ -46,6 +48,7 @@
     {
         "filename": "IMG_PNEO4_STD_202312280700138_PANSHARP_ORT_PWOI_000373588_19_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.4241,
         "coordinates": {
             "top_left": [
                 410556.0,
@@ -68,6 +71,7 @@
     {
         "filename": "IMG_PNEO4_STD_202312280700138_PANSHARP_ORT_PWOI_000373588_19_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.2783,
         "coordinates": {
             "top_left": [
                 410556.0,
@@ -90,6 +94,7 @@
     {
         "filename": "IMG_PNEO4_STD_202312280700138_PANSHARP_ORT_PWOI_000373588_19_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.1557,
         "coordinates": {
             "top_left": [
                 410556.0,
@@ -112,6 +117,7 @@
     {
         "filename": "IMG_PNEO4_STD_202312280700138_PANSHARP_ORT_PWOI_000373588_19_1_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.2883,
         "coordinates": {
             "top_left": [
                 410556.0,
@@ -134,6 +140,7 @@
     {
         "filename": "IMG_PNEO4_STD_202312280701142_PANSHARP_ORT_PWOI_000373576_12_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.7529,
         "coordinates": {
             "top_left": [
                 393468.0,
@@ -156,6 +163,7 @@
     {
         "filename": "IMG_PNEO4_STD_202402230656127_PANSHARP_ORT_PWOI_000373576_16_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.7238,
         "coordinates": {
             "top_left": [
                 382092.0,
@@ -178,6 +186,7 @@
     {
         "filename": "IMG_PNEO4_STD_202402230656127_PANSHARP_ORT_PWOI_000373576_16_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.9676,
         "coordinates": {
             "top_left": [
                 382092.0,
@@ -200,6 +209,7 @@
     {
         "filename": "IMG_PNEO4_STD_202402280654249_PANSHARP_ORT_PWOI_000373576_11_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.2444,
         "coordinates": {
             "top_left": [
                 416004.0,
@@ -222,6 +232,7 @@
     {
         "filename": "IMG_PNEO4_STD_202411140655145_PANSHARP_ORT_PWOI_000373591_4_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.9177,
         "coordinates": {
             "top_left": [
                 286392.0,
@@ -244,6 +255,7 @@
     {
         "filename": "IMG_PNEO4_STD_202411140655145_PANSHARP_ORT_PWOI_000373591_4_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 7.0897,
         "coordinates": {
             "top_left": [
                 286392.0,
@@ -266,6 +278,7 @@
     {
         "filename": "IMG_PNEO4_STD_202503040707104_PANSHARP_ORT_PWOI_000373568_1_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.9097,
         "coordinates": {
             "top_left": [
                 252420.0,
@@ -288,6 +301,7 @@
     {
         "filename": "IMG_PNEO3_202310130650460_PANSHARP_ORT_PWOI_000279689_1_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 20.2284,
         "coordinates": {
             "top_left": [
                 370062.0,
@@ -310,6 +324,7 @@
     {
         "filename": "IMG_PNEO3_202310130650460_PANSHARP_ORT_PWOI_000279689_1_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.9535,
         "coordinates": {
             "top_left": [
                 379278.0,
@@ -332,6 +347,7 @@
     {
         "filename": "IMG_PNEO3_202310130650460_PANSHARP_ORT_PWOI_000279689_1_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.5105,
         "coordinates": {
             "top_left": [
                 370062.0,
@@ -354,6 +370,7 @@
     {
         "filename": "IMG_PNEO3_202310130650460_PANSHARP_ORT_PWOI_000279689_1_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 379278.0,
@@ -376,6 +393,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 379656.0,
@@ -398,6 +416,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 23.123,
         "coordinates": {
             "top_left": [
                 388872.0,
@@ -420,6 +439,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 18.6741,
         "coordinates": {
             "top_left": [
                 379656.0,
@@ -442,6 +462,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 12.5211,
         "coordinates": {
             "top_left": [
                 388872.0,
@@ -464,6 +485,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 54.9341,
         "coordinates": {
             "top_left": [
                 379656.0,
@@ -486,6 +508,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 22.7401,
         "coordinates": {
             "top_left": [
                 379656.0,
@@ -508,6 +531,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 388872.0,
@@ -530,6 +554,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R5C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 379656.0,
@@ -552,6 +577,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R5C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 388872.0,
@@ -574,6 +600,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656161_PANSHARP_ORT_PWOI_000373589_4_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 49.9123,
         "coordinates": {
             "top_left": [
                 302802.0,
@@ -596,6 +623,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656161_PANSHARP_ORT_PWOI_000373589_4_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 18.1272,
         "coordinates": {
             "top_left": [
                 312018.0,
@@ -618,6 +646,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656161_PANSHARP_ORT_PWOI_000373589_4_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.2385,
         "coordinates": {
             "top_left": [
                 302802.0,
@@ -640,6 +669,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305190711335_PANSHARP_ORT_PWOI_000373521_2_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 4.9842,
         "coordinates": {
             "top_left": [
                 42504.0,
@@ -662,6 +692,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100734417_PANSHARP_ORT_PWOI_000373520_16_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -195834.0,
@@ -684,6 +715,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306150730428_PANSHARP_ORT_PWOI_000373520_13_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.4549,
         "coordinates": {
             "top_left": [
                 -118842.0,
@@ -706,6 +738,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306300719206_PANSHARP_ORT_PWOI_000373520_9_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 33.2122,
         "coordinates": {
             "top_left": [
                 -43182.0,
@@ -728,6 +761,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307100711210_PANSHARP_ORT_PWOI_000373520_6_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.3207,
         "coordinates": {
             "top_left": [
                 129096.0,
@@ -750,6 +784,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.7111,
         "coordinates": {
             "top_left": [
                 -211266.0,
@@ -772,6 +807,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307150707367_PANSHARP_ORT_PWOI_000373520_3_5_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.5747,
         "coordinates": {
             "top_left": [
                 167226.0,
@@ -794,6 +830,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727072_PANSHARP_ORT_PWOI_000373512_20_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -157344.0,
@@ -816,6 +853,7 @@
     {
         "filename": "IMG_PNEO4_STD_202308050711466_PANSHARP_ORT_PWOI_000373512_16_4_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.2699,
         "coordinates": {
             "top_left": [
                 159708.0,
@@ -838,6 +876,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309260712105_PANSHARP_ORT_PWOI_000373512_5_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.3372,
         "coordinates": {
             "top_left": [
                 117324.0,
@@ -860,6 +899,7 @@
     {
         "filename": "IMG_PNEO4_STD_202310110702026_PANSHARP_ORT_PWOI_000373576_5_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 2.2139,
         "coordinates": {
             "top_left": [
                 331836.0,
@@ -882,6 +922,7 @@
     {
         "filename": "IMG_PNEO4_STD_202311160652517_PANSHARP_ORT_PWOI_000373588_7_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 8.7491,
         "coordinates": {
             "top_left": [
                 360546.0,
@@ -904,6 +945,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656312_PANSHARP_ORT_PWOI_000373568_9_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.3809,
         "coordinates": {
             "top_left": [
                 275682.0,
@@ -926,6 +968,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656312_PANSHARP_ORT_PWOI_000373568_9_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 19.7974,
         "coordinates": {
             "top_left": [
                 284898.0,
@@ -948,6 +991,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656312_PANSHARP_ORT_PWOI_000373568_9_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 18.1801,
         "coordinates": {
             "top_left": [
                 275682.0,
@@ -970,6 +1014,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656312_PANSHARP_ORT_PWOI_000373568_9_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 284898.0,
@@ -992,6 +1037,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656312_PANSHARP_ORT_PWOI_000373568_9_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.0935,
         "coordinates": {
             "top_left": [
                 275682.0,
@@ -1014,6 +1060,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656312_PANSHARP_ORT_PWOI_000373568_9_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 284898.0,
@@ -1036,6 +1083,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656481_PANSHARP_ORT_PWOI_000373568_8_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.8449,
         "coordinates": {
             "top_left": [
                 262938.0,
@@ -1058,6 +1106,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656481_PANSHARP_ORT_PWOI_000373568_8_3_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.8453,
         "coordinates": {
             "top_left": [
                 262938.0,
@@ -1080,6 +1129,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656481_PANSHARP_ORT_PWOI_000373568_8_3_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 12.1527,
         "coordinates": {
             "top_left": [
                 272154.0,
@@ -1102,6 +1152,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656481_PANSHARP_ORT_PWOI_000373568_8_3_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.6088,
         "coordinates": {
             "top_left": [
                 262938.0,
@@ -1124,6 +1175,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656481_PANSHARP_ORT_PWOI_000373568_8_3_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 3.2363,
         "coordinates": {
             "top_left": [
                 272154.0,
@@ -1146,6 +1198,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656500_PANSHARP_ORT_PWOI_000373568_8_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 22.8979,
         "coordinates": {
             "top_left": [
                 263100.0,
@@ -1168,6 +1221,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656500_PANSHARP_ORT_PWOI_000373568_8_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.7426,
         "coordinates": {
             "top_left": [
                 263100.0,
@@ -1190,6 +1244,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305060711302_PANSHARP_ORT_PWOI_000373521_6_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.1814,
         "coordinates": {
             "top_left": [
                 54690.0,
@@ -1212,6 +1267,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 7.1172,
         "coordinates": {
             "top_left": [
                 -71298.0,
@@ -1234,6 +1290,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 22.0578,
         "coordinates": {
             "top_left": [
                 -80514.0,
@@ -1256,6 +1313,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -71298.0,
@@ -1278,6 +1336,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 14.1606,
         "coordinates": {
             "top_left": [
                 -80514.0,
@@ -1300,6 +1359,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -71298.0,
@@ -1322,6 +1382,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 19.0171,
         "coordinates": {
             "top_left": [
                 -80514.0,
@@ -1344,6 +1405,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305270714264_PANSHARP_ORT_PWOI_000373576_6_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.2925,
         "coordinates": {
             "top_left": [
                 303432.0,
@@ -1366,6 +1428,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305270714535_PANSHARP_ORT_PWOI_000373568_7_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.6843,
         "coordinates": {
             "top_left": [
                 229302.0,
@@ -1388,6 +1451,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305270714535_PANSHARP_ORT_PWOI_000373568_7_3_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 5.1549,
         "coordinates": {
             "top_left": [
                 238518.0,
@@ -1410,6 +1474,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305270714544_PANSHARP_ORT_PWOI_000373568_7_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.6522,
         "coordinates": {
             "top_left": [
                 227058.0,
@@ -1432,6 +1497,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305270714544_PANSHARP_ORT_PWOI_000373568_7_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.5894,
         "coordinates": {
             "top_left": [
                 227058.0,
@@ -1454,6 +1520,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -250314.0,
@@ -1476,6 +1543,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 16.3718,
         "coordinates": {
             "top_left": [
                 -241098.0,
@@ -1498,6 +1566,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.3992,
         "coordinates": {
             "top_left": [
                 -250314.0,
@@ -1520,6 +1589,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 16.3696,
         "coordinates": {
             "top_left": [
                 -241098.0,
@@ -1542,6 +1612,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.3174,
         "coordinates": {
             "top_left": [
                 -241098.0,
@@ -1564,6 +1635,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.1031,
         "coordinates": {
             "top_left": [
                 -250314.0,
@@ -1586,6 +1658,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -241098.0,
@@ -1608,6 +1681,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R5C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.1573,
         "coordinates": {
             "top_left": [
                 -250314.0,
@@ -1630,6 +1704,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R5C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -241098.0,
@@ -1652,6 +1727,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.5985,
         "coordinates": {
             "top_left": [
                 -249672.0,
@@ -1674,6 +1750,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -240456.0,
@@ -1696,6 +1773,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 15.9094,
         "coordinates": {
             "top_left": [
                 -249672.0,
@@ -1718,6 +1796,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 2.5023,
         "coordinates": {
             "top_left": [
                 -249672.0,
@@ -1740,6 +1819,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 11.1075,
         "coordinates": {
             "top_left": [
                 -240456.0,
@@ -1762,6 +1842,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.7724,
         "coordinates": {
             "top_left": [
                 -249672.0,
@@ -1784,6 +1865,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -240456.0,
@@ -1806,6 +1888,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R5C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.8073,
         "coordinates": {
             "top_left": [
                 -249672.0,
@@ -1828,6 +1911,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R5C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -240456.0,
@@ -1850,6 +1934,7 @@
     {
         "filename": "IMG_PNEO3_STD_202306070726434_PANSHARP_ORT_PWOI_000373520_17_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -93300.0,
@@ -1872,6 +1957,7 @@
     {
         "filename": "IMG_PNEO3_STD_202306070726434_PANSHARP_ORT_PWOI_000373520_17_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 17.3074,
         "coordinates": {
             "top_left": [
                 -84084.0,
@@ -1894,6 +1980,7 @@
     {
         "filename": "IMG_PNEO3_STD_202306070726434_PANSHARP_ORT_PWOI_000373520_17_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 18.4565,
         "coordinates": {
             "top_left": [
                 -84084.0,
@@ -1916,6 +2003,7 @@
     {
         "filename": "IMG_PNEO3_STD_202306070726434_PANSHARP_ORT_PWOI_000373520_17_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.6625,
         "coordinates": {
             "top_left": [
                 -93300.0,
@@ -1938,6 +2026,7 @@
     {
         "filename": "IMG_PNEO3_STD_202306070726434_PANSHARP_ORT_PWOI_000373520_17_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 43.2928,
         "coordinates": {
             "top_left": [
                 -84084.0,
@@ -1960,6 +2049,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307020706494_PANSHARP_ORT_PWOI_000373568_11_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.8135,
         "coordinates": {
             "top_left": [
                 301392.0,
@@ -1982,6 +2072,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307020708006_PANSHARP_ORT_PWOI_000373520_8_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.4184,
         "coordinates": {
             "top_left": [
                 17382.0,
@@ -2004,6 +2095,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307020708006_PANSHARP_ORT_PWOI_000373520_8_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 9.9654,
         "coordinates": {
             "top_left": [
                 26598.0,
@@ -2026,6 +2118,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307020708006_PANSHARP_ORT_PWOI_000373520_8_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.2771,
         "coordinates": {
             "top_left": [
                 17382.0,
@@ -2048,6 +2141,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.9461,
         "coordinates": {
             "top_left": [
                 -232356.0,
@@ -2070,6 +2164,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -223140.0,
@@ -2092,6 +2187,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.5458,
         "coordinates": {
             "top_left": [
                 -232356.0,
@@ -2114,6 +2210,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 5.781,
         "coordinates": {
             "top_left": [
                 -223140.0,
@@ -2136,6 +2233,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -232356.0,
@@ -2158,6 +2256,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 11.7995,
         "coordinates": {
             "top_left": [
                 -223140.0,
@@ -2180,6 +2279,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -232356.0,
@@ -2202,6 +2302,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307130718350_PANSHARP_ORT_PWOI_000373568_5_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 14.892,
         "coordinates": {
             "top_left": [
                 266136.0,
@@ -2224,6 +2325,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307130718350_PANSHARP_ORT_PWOI_000373568_5_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.4265,
         "coordinates": {
             "top_left": [
                 266136.0,
@@ -2246,6 +2348,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307180714521_PANSHARP_ORT_PWOI_000373512_17_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 12.4336,
         "coordinates": {
             "top_left": [
                 164988.0,
@@ -2268,6 +2371,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307180714521_PANSHARP_ORT_PWOI_000373512_17_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 14.0867,
         "coordinates": {
             "top_left": [
                 174204.0,
@@ -2290,6 +2394,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307180714521_PANSHARP_ORT_PWOI_000373512_17_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 1.2997,
         "coordinates": {
             "top_left": [
                 174204.0,
@@ -2312,6 +2417,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307280706468_PANSHARP_ORT_PWOI_000373568_4_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.005,
         "coordinates": {
             "top_left": [
                 301020.0,
@@ -2334,6 +2440,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701142_PANSHARP_ORT_PWOI_000373512_15_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 18.0853,
         "coordinates": {
             "top_left": [
                 99132.0,
@@ -2356,6 +2463,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701142_PANSHARP_ORT_PWOI_000373512_15_3_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 4.21,
         "coordinates": {
             "top_left": [
                 99132.0,
@@ -2378,6 +2486,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701158_PANSHARP_ORT_PWOI_000373512_15_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.6679,
         "coordinates": {
             "top_left": [
                 90792.0,
@@ -2400,6 +2509,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701158_PANSHARP_ORT_PWOI_000373512_15_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 13.7441,
         "coordinates": {
             "top_left": [
                 100008.0,
@@ -2422,6 +2532,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701158_PANSHARP_ORT_PWOI_000373512_15_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 100008.0,
@@ -2444,6 +2555,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701158_PANSHARP_ORT_PWOI_000373512_15_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0484,
         "coordinates": {
             "top_left": [
                 90792.0,
@@ -2466,6 +2578,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701158_PANSHARP_ORT_PWOI_000373512_15_2_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 100008.0,
@@ -2488,6 +2601,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130710555_PANSHARP_ORT_PWOI_000373512_14_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.2103,
         "coordinates": {
             "top_left": [
                 176880.0,
@@ -2510,6 +2624,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130711097_PANSHARP_ORT_PWOI_000373512_13_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.9521,
         "coordinates": {
             "top_left": [
                 169638.0,
@@ -2532,6 +2647,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130711098_PANSHARP_ORT_PWOI_000373512_13_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.0782,
         "coordinates": {
             "top_left": [
                 176562.0,
@@ -2554,6 +2670,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712012_PANSHARP_ORT_PWOI_000373512_12_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.438,
         "coordinates": {
             "top_left": [
                 136674.0,
@@ -2576,6 +2693,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712012_PANSHARP_ORT_PWOI_000373512_12_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.9555,
         "coordinates": {
             "top_left": [
                 136674.0,
@@ -2598,6 +2716,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712230_PANSHARP_ORT_PWOI_000373512_11_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 16.7948,
         "coordinates": {
             "top_left": [
                 116712.0,
@@ -2620,6 +2739,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712230_PANSHARP_ORT_PWOI_000373512_11_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.0431,
         "coordinates": {
             "top_left": [
                 116712.0,
@@ -2642,6 +2762,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712230_PANSHARP_ORT_PWOI_000373512_11_2_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.8916,
         "coordinates": {
             "top_left": [
                 116712.0,
@@ -2664,6 +2785,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712251_PANSHARP_ORT_PWOI_000373512_11_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.5579,
         "coordinates": {
             "top_left": [
                 129798.0,
@@ -2686,6 +2808,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712464_PANSHARP_ORT_PWOI_000373512_10_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.3038,
         "coordinates": {
             "top_left": [
                 103740.0,
@@ -2708,6 +2831,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712464_PANSHARP_ORT_PWOI_000373512_10_3_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.0937,
         "coordinates": {
             "top_left": [
                 103740.0,
@@ -2730,6 +2854,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712464_PANSHARP_ORT_PWOI_000373512_10_3_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 112956.0,
@@ -2752,6 +2877,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712484_PANSHARP_ORT_PWOI_000373512_10_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 29.6511,
         "coordinates": {
             "top_left": [
                 103860.0,
@@ -2774,6 +2900,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712484_PANSHARP_ORT_PWOI_000373512_10_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.5109,
         "coordinates": {
             "top_left": [
                 103860.0,
@@ -2796,6 +2923,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712488_PANSHARP_ORT_PWOI_000373512_10_4_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.8517,
         "coordinates": {
             "top_left": [
                 115410.0,
@@ -2818,6 +2946,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309180706561_PANSHARP_ORT_PWOI_000373568_17_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0241,
         "coordinates": {
             "top_left": [
                 267042.0,
@@ -2840,6 +2969,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309180706585_PANSHARP_ORT_PWOI_000373568_17_4_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.1721,
         "coordinates": {
             "top_left": [
                 266136.0,
@@ -2862,6 +2992,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309230703141_PANSHARP_ORT_PWOI_000373576_18_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.3707,
         "coordinates": {
             "top_left": [
                 314124.0,
@@ -2884,6 +3015,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309230708047_PANSHARP_ORT_PWOI_000373591_12_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.6873,
         "coordinates": {
             "top_left": [
                 108222.0,
@@ -2906,6 +3038,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309230708047_PANSHARP_ORT_PWOI_000373591_12_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 4.9227,
         "coordinates": {
             "top_left": [
                 108222.0,
@@ -2928,6 +3061,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309240723187_PANSHARP_ORT_PWOI_000373512_6_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.255,
         "coordinates": {
             "top_left": [
                 106698.0,
@@ -2950,6 +3084,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309240723189_PANSHARP_ORT_PWOI_000373512_6_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.2681,
         "coordinates": {
             "top_left": [
                 102390.0,
@@ -2972,6 +3107,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309240723205_PANSHARP_ORT_PWOI_000373512_6_4_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.6605,
         "coordinates": {
             "top_left": [
                 112116.0,
@@ -2994,6 +3130,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309240723205_PANSHARP_ORT_PWOI_000373512_6_4_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.6189,
         "coordinates": {
             "top_left": [
                 112116.0,
@@ -3016,6 +3153,7 @@
     {
         "filename": "IMG_PNEO3_STD_202310030656260_PANSHARP_ORT_PWOI_000373588_3_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.9374,
         "coordinates": {
             "top_left": [
                 415512.0,
@@ -3038,6 +3176,7 @@
     {
         "filename": "IMG_PNEO3_STD_202310030656260_PANSHARP_ORT_PWOI_000373588_3_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 7.8096,
         "coordinates": {
             "top_left": [
                 415512.0,
@@ -3060,6 +3199,7 @@
     {
         "filename": "IMG_PNEO3_STD_202310140706547_PANSHARP_ORT_PWOI_000373568_12_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 29.5531,
         "coordinates": {
             "top_left": [
                 251610.0,
@@ -3082,6 +3222,7 @@
     {
         "filename": "IMG_PNEO3_STD_202310140706547_PANSHARP_ORT_PWOI_000373568_12_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 7.7355,
         "coordinates": {
             "top_left": [
                 260826.0,
@@ -3104,6 +3245,7 @@
     {
         "filename": "IMG_PNEO3_STD_202310140706547_PANSHARP_ORT_PWOI_000373568_12_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 4.0935,
         "coordinates": {
             "top_left": [
                 251610.0,
@@ -3126,6 +3268,7 @@
     {
         "filename": "IMG_PNEO3_202311290654234_PANSHARP_ORT_PWOI_000279689_2_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 388872.0,
@@ -3148,6 +3291,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656161_PANSHARP_ORT_PWOI_000373589_4_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 312018.0,
@@ -3170,6 +3314,7 @@
     {
         "filename": "IMG_PNEO3_STD_202304300656481_PANSHARP_ORT_PWOI_000373568_8_3_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 14.9331,
         "coordinates": {
             "top_left": [
                 272154.0,
@@ -3192,6 +3337,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.576,
         "coordinates": {
             "top_left": [
                 -80514.0,
@@ -3214,6 +3360,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305170722489_PANSHARP_ORT_PWOI_000373521_3_2_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -71298.0,
@@ -3236,6 +3383,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735158_PANSHARP_ORT_PWOI_000373520_18_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 15.6462,
         "coordinates": {
             "top_left": [
                 -250314.0,
@@ -3258,6 +3406,7 @@
     {
         "filename": "IMG_PNEO3_STD_202305280735232_PANSHARP_ORT_PWOI_000373520_18_3_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.7127,
         "coordinates": {
             "top_left": [
                 -240456.0,
@@ -3280,6 +3429,7 @@
     {
         "filename": "IMG_PNEO3_STD_202312200656277_PANSHARP_ORT_PWOI_000373576_13_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.9441,
         "coordinates": {
             "top_left": [
                 427938.0,
@@ -3302,6 +3452,7 @@
     {
         "filename": "IMG_PNEO3_STD_202403130711390_PANSHARP_ORT_PWOI_000373512_4_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.8979,
         "coordinates": {
             "top_left": [
                 142506.0,
@@ -3324,6 +3475,7 @@
     {
         "filename": "IMG_PNEO3_STD_202403130711390_PANSHARP_ORT_PWOI_000373512_4_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.1979,
         "coordinates": {
             "top_left": [
                 142506.0,
@@ -3346,6 +3498,7 @@
     {
         "filename": "IMG_PNEO3_STD_202403170649557_PANSHARP_ORT_PWOI_000373576_14_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 4.6729,
         "coordinates": {
             "top_left": [
                 428088.0,
@@ -3368,6 +3521,7 @@
     {
         "filename": "IMG_PNEO3_STD_202403170649566_PANSHARP_ORT_PWOI_000373576_14_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.965,
         "coordinates": {
             "top_left": [
                 428106.0,
@@ -3390,6 +3544,7 @@
     {
         "filename": "IMG_PNEO3_STD_202403180707036_PANSHARP_ORT_PWOI_000373576_3_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 20.3312,
         "coordinates": {
             "top_left": [
                 314526.0,
@@ -3412,6 +3567,7 @@
     {
         "filename": "IMG_PNEO3_STD_202403180707038_PANSHARP_ORT_PWOI_000373576_3_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 14.9156,
         "coordinates": {
             "top_left": [
                 322344.0,
@@ -3434,6 +3590,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405040711394_PANSHARP_ORT_PWOI_000373568_16_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 16.1282,
         "coordinates": {
             "top_left": [
                 203262.0,
@@ -3456,6 +3613,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405040711394_PANSHARP_ORT_PWOI_000373568_16_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.4495,
         "coordinates": {
             "top_left": [
                 212478.0,
@@ -3478,6 +3636,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.3412,
         "coordinates": {
             "top_left": [
                 -5106.0,
@@ -3500,6 +3659,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 4110.0,
@@ -3522,6 +3682,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 19.5604,
         "coordinates": {
             "top_left": [
                 -5106.0,
@@ -3544,6 +3705,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 4110.0,
@@ -3566,6 +3728,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 15.7143,
         "coordinates": {
             "top_left": [
                 -5106.0,
@@ -3588,6 +3751,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -5106.0,
@@ -3610,6 +3774,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.4006,
         "coordinates": {
             "top_left": [
                 4110.0,
@@ -3632,6 +3797,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712125_PANSHARP_ORT_PWOI_000373512_2_4_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 2.4849,
         "coordinates": {
             "top_left": [
                 -5106.0,
@@ -3654,6 +3820,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712136_PANSHARP_ORT_PWOI_000373512_2_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 19.3725,
         "coordinates": {
             "top_left": [
                 -18402.0,
@@ -3676,6 +3843,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712136_PANSHARP_ORT_PWOI_000373512_2_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -9185.999999999998,
@@ -3698,6 +3866,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712136_PANSHARP_ORT_PWOI_000373512_2_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 14.3518,
         "coordinates": {
             "top_left": [
                 -18402.0,
@@ -3720,6 +3889,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712136_PANSHARP_ORT_PWOI_000373512_2_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 2.5792,
         "coordinates": {
             "top_left": [
                 -9185.999999999998,
@@ -3742,6 +3912,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712136_PANSHARP_ORT_PWOI_000373512_2_2_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.4706,
         "coordinates": {
             "top_left": [
                 -9185.999999999998,
@@ -3764,6 +3935,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712141_PANSHARP_ORT_PWOI_000373512_2_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.028,
         "coordinates": {
             "top_left": [
                 -4572.0,
@@ -3786,6 +3958,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405310730521_PANSHARP_ORT_PWOI_000373512_1_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 12.5774,
         "coordinates": {
             "top_left": [
                 -214476.0,
@@ -3808,6 +3981,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405310730521_PANSHARP_ORT_PWOI_000373512_1_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.8072,
         "coordinates": {
             "top_left": [
                 -214476.0,
@@ -3830,6 +4004,7 @@
     {
         "filename": "IMG_PNEO3_STD_202406040707078_PANSHARP_ORT_PWOI_000373576_9_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.3102,
         "coordinates": {
             "top_left": [
                 305880.0,
@@ -3852,6 +4027,7 @@
     {
         "filename": "IMG_PNEO3_STD_202406040707238_PANSHARP_ORT_PWOI_000373576_10_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 4.5428,
         "coordinates": {
             "top_left": [
                 302802.0,
@@ -3874,6 +4050,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.5546,
         "coordinates": {
             "top_left": [
                 418596.0,
@@ -3896,6 +4073,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.0554,
         "coordinates": {
             "top_left": [
                 418596.0,
@@ -3918,6 +4096,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 427812.0,
@@ -3940,6 +4119,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 2.743,
         "coordinates": {
             "top_left": [
                 418596.0,
@@ -3962,6 +4142,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 7.5258,
         "coordinates": {
             "top_left": [
                 427812.0,
@@ -3984,6 +4165,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 418596.0,
@@ -4006,6 +4188,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.3708,
         "coordinates": {
             "top_left": [
                 427812.0,
@@ -4028,6 +4211,7 @@
     {
         "filename": "IMG_PNEO3_STD_202411220658092_PANSHARP_ORT_PWOI_000373576_1_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0043,
         "coordinates": {
             "top_left": [
                 331866.0,
@@ -4050,6 +4234,7 @@
     {
         "filename": "IMG_PNEO3_STD_202411220658104_PANSHARP_ORT_PWOI_000373576_1_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.2498,
         "coordinates": {
             "top_left": [
                 331914.0,
@@ -4072,6 +4257,7 @@
     {
         "filename": "IMG_PNEO3_STD_202503010702450_PANSHARP_ORT_PWOI_000373591_3_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.9041,
         "coordinates": {
             "top_left": [
                 292332.0,
@@ -4094,6 +4280,7 @@
     {
         "filename": "IMG_PNEO4_STD_202304120700064_PANSHARP_ORT_PWOI_000373568_18_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.5149,
         "coordinates": {
             "top_left": [
                 217548.0,
@@ -4116,6 +4303,7 @@
     {
         "filename": "IMG_PNEO4_STD_202304280707493_PANSHARP_ORT_PWOI_000373521_7_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.9985,
         "coordinates": {
             "top_left": [
                 67044.0,
@@ -4138,6 +4326,7 @@
     {
         "filename": "IMG_PNEO4_STD_202304280707493_PANSHARP_ORT_PWOI_000373521_7_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 14.4372,
         "coordinates": {
             "top_left": [
                 76260.0,
@@ -4160,6 +4349,7 @@
     {
         "filename": "IMG_PNEO4_STD_202304280707493_PANSHARP_ORT_PWOI_000373521_7_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.0905,
         "coordinates": {
             "top_left": [
                 67044.0,
@@ -4182,6 +4372,7 @@
     {
         "filename": "IMG_PNEO4_STD_202304280707493_PANSHARP_ORT_PWOI_000373521_7_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.3832,
         "coordinates": {
             "top_left": [
                 76260.0,
@@ -4204,6 +4395,7 @@
     {
         "filename": "IMG_PNEO4_STD_202304280707493_PANSHARP_ORT_PWOI_000373521_7_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.3652,
         "coordinates": {
             "top_left": [
                 67044.0,
@@ -4226,6 +4418,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305090719090_PANSHARP_ORT_PWOI_000373521_5_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.3131,
         "coordinates": {
             "top_left": [
                 -142290.0,
@@ -4248,6 +4441,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305090719090_PANSHARP_ORT_PWOI_000373521_5_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 10.3698,
         "coordinates": {
             "top_left": [
                 -133074.0,
@@ -4270,6 +4464,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305090719090_PANSHARP_ORT_PWOI_000373521_5_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.7247,
         "coordinates": {
             "top_left": [
                 -142290.0,
@@ -4292,6 +4487,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305090719090_PANSHARP_ORT_PWOI_000373521_5_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -133074.0,
@@ -4314,6 +4510,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.8555,
         "coordinates": {
             "top_left": [
                 -238968.0,
@@ -4336,6 +4533,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 13.1513,
         "coordinates": {
             "top_left": [
                 -229752.0,
@@ -4358,6 +4556,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 19.5316,
         "coordinates": {
             "top_left": [
                 -238968.0,
@@ -4380,6 +4579,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307020708006_PANSHARP_ORT_PWOI_000373520_8_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 26598.0,
@@ -4402,6 +4602,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307080724478_PANSHARP_ORT_PWOI_000373520_7_1_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.7264,
         "coordinates": {
             "top_left": [
                 -223140.0,
@@ -4424,6 +4625,7 @@
     {
         "filename": "IMG_PNEO3_STD_202307180714521_PANSHARP_ORT_PWOI_000373512_17_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 7.9023,
         "coordinates": {
             "top_left": [
                 164988.0,
@@ -4446,6 +4648,7 @@
     {
         "filename": "IMG_PNEO3_STD_202308070701158_PANSHARP_ORT_PWOI_000373512_15_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.136,
         "coordinates": {
             "top_left": [
                 90792.0,
@@ -4468,6 +4671,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712230_PANSHARP_ORT_PWOI_000373512_11_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 14.2366,
         "coordinates": {
             "top_left": [
                 116712.0,
@@ -4490,6 +4694,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309130712464_PANSHARP_ORT_PWOI_000373512_10_3_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 9.8915,
         "coordinates": {
             "top_left": [
                 112956.0,
@@ -4512,6 +4717,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309230703139_PANSHARP_ORT_PWOI_000373576_18_4_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 12.3637,
         "coordinates": {
             "top_left": [
                 318354.0,
@@ -4534,6 +4740,7 @@
     {
         "filename": "IMG_PNEO3_STD_202306070726434_PANSHARP_ORT_PWOI_000373520_17_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.396,
         "coordinates": {
             "top_left": [
                 -93300.0,
@@ -4556,6 +4763,7 @@
     {
         "filename": "IMG_PNEO3_STD_202309240723205_PANSHARP_ORT_PWOI_000373512_6_4_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.4389,
         "coordinates": {
             "top_left": [
                 112116.0,
@@ -4578,6 +4786,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 1.2729,
         "coordinates": {
             "top_left": [
                 -229752.0,
@@ -4600,6 +4809,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 18.2915,
         "coordinates": {
             "top_left": [
                 -238968.0,
@@ -4622,6 +4832,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -229752.0,
@@ -4644,6 +4855,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 2.498,
         "coordinates": {
             "top_left": [
                 -238968.0,
@@ -4666,6 +4878,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305150735104_PANSHARP_ORT_PWOI_000373521_4_1_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -229752.0,
@@ -4688,6 +4901,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305190711335_PANSHARP_ORT_PWOI_000373521_2_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.7429,
         "coordinates": {
             "top_left": [
                 42504.0,
@@ -4710,6 +4924,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305190711335_PANSHARP_ORT_PWOI_000373521_2_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 7.7204,
         "coordinates": {
             "top_left": [
                 51720.0,
@@ -4732,6 +4947,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305190711335_PANSHARP_ORT_PWOI_000373521_2_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 51720.0,
@@ -4754,6 +4970,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305250726523_PANSHARP_ORT_PWOI_000373520_20_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.4327,
         "coordinates": {
             "top_left": [
                 -130284.0,
@@ -4776,6 +4993,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305250726523_PANSHARP_ORT_PWOI_000373520_20_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 9.2115,
         "coordinates": {
             "top_left": [
                 -121068.0,
@@ -4798,6 +5016,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305250726523_PANSHARP_ORT_PWOI_000373520_20_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 3.0507,
         "coordinates": {
             "top_left": [
                 -130284.0,
@@ -4820,6 +5039,7 @@
     {
         "filename": "IMG_PNEO4_STD_202305250726523_PANSHARP_ORT_PWOI_000373520_20_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -121068.0,
@@ -4842,6 +5062,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100734417_PANSHARP_ORT_PWOI_000373520_16_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 13.3043,
         "coordinates": {
             "top_left": [
                 -205050.0,
@@ -4864,6 +5085,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100734417_PANSHARP_ORT_PWOI_000373520_16_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 8.3809,
         "coordinates": {
             "top_left": [
                 -195834.0,
@@ -4886,6 +5108,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100734417_PANSHARP_ORT_PWOI_000373520_16_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 7.1509,
         "coordinates": {
             "top_left": [
                 -205050.0,
@@ -4908,6 +5131,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100735100_PANSHARP_ORT_PWOI_000373520_15_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.8857,
         "coordinates": {
             "top_left": [
                 -253248.0,
@@ -4930,6 +5154,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100735100_PANSHARP_ORT_PWOI_000373520_15_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 14.8027,
         "coordinates": {
             "top_left": [
                 -253248.0,
@@ -4952,6 +5177,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100735100_PANSHARP_ORT_PWOI_000373520_15_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.4345,
         "coordinates": {
             "top_left": [
                 -253248.0,
@@ -4974,6 +5200,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100735100_PANSHARP_ORT_PWOI_000373520_15_1_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.2131,
         "coordinates": {
             "top_left": [
                 -253248.0,
@@ -4996,6 +5223,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306100735100_PANSHARP_ORT_PWOI_000373520_15_1_F_1_PS_R5C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.8505,
         "coordinates": {
             "top_left": [
                 -253248.0,
@@ -5018,6 +5246,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306150730428_PANSHARP_ORT_PWOI_000373520_13_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 12.3535,
         "coordinates": {
             "top_left": [
                 -109626.0,
@@ -5040,6 +5269,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306150730428_PANSHARP_ORT_PWOI_000373520_13_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 12.4315,
         "coordinates": {
             "top_left": [
                 -118842.0,
@@ -5062,6 +5292,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306150730428_PANSHARP_ORT_PWOI_000373520_13_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 18.5998,
         "coordinates": {
             "top_left": [
                 -109626.0,
@@ -5084,6 +5315,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306150730428_PANSHARP_ORT_PWOI_000373520_13_1_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 7.9482,
         "coordinates": {
             "top_left": [
                 -118842.0,
@@ -5106,6 +5338,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306150730428_PANSHARP_ORT_PWOI_000373520_13_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 3.6951,
         "coordinates": {
             "top_left": [
                 -109626.0,
@@ -5128,6 +5361,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306300719206_PANSHARP_ORT_PWOI_000373520_9_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 14.6975,
         "coordinates": {
             "top_left": [
                 -43182.0,
@@ -5150,6 +5384,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306300719206_PANSHARP_ORT_PWOI_000373520_9_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 25.4067,
         "coordinates": {
             "top_left": [
                 -33966.0,
@@ -5172,6 +5407,7 @@
     {
         "filename": "IMG_PNEO4_STD_202306300719206_PANSHARP_ORT_PWOI_000373520_9_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 33.7551,
         "coordinates": {
             "top_left": [
                 -33966.0,
@@ -5194,6 +5430,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307100711210_PANSHARP_ORT_PWOI_000373520_6_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.2719,
         "coordinates": {
             "top_left": [
                 129096.0,
@@ -5216,6 +5453,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307100711210_PANSHARP_ORT_PWOI_000373520_6_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.9531,
         "coordinates": {
             "top_left": [
                 138312.0,
@@ -5238,6 +5476,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307100711210_PANSHARP_ORT_PWOI_000373520_6_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.2772,
         "coordinates": {
             "top_left": [
                 129096.0,
@@ -5260,6 +5499,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307100711210_PANSHARP_ORT_PWOI_000373520_6_1_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 138312.0,
@@ -5282,6 +5522,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307100711210_PANSHARP_ORT_PWOI_000373520_6_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 138312.0,
@@ -5304,6 +5545,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731005_PANSHARP_ORT_PWOI_000373520_5_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.867,
         "coordinates": {
             "top_left": [
                 -206610.0,
@@ -5326,6 +5568,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731005_PANSHARP_ORT_PWOI_000373520_5_3_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.6931,
         "coordinates": {
             "top_left": [
                 -206610.0,
@@ -5348,6 +5591,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731005_PANSHARP_ORT_PWOI_000373520_5_3_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.3678,
         "coordinates": {
             "top_left": [
                 -206610.0,
@@ -5370,6 +5614,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731005_PANSHARP_ORT_PWOI_000373520_5_3_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.6233,
         "coordinates": {
             "top_left": [
                 -206610.0,
@@ -5392,6 +5637,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 8.4843,
         "coordinates": {
             "top_left": [
                 -202050.0,
@@ -5414,6 +5660,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 1.746,
         "coordinates": {
             "top_left": [
                 -211266.0,
@@ -5436,6 +5683,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 8.0869,
         "coordinates": {
             "top_left": [
                 -202050.0,
@@ -5458,6 +5706,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.9844,
         "coordinates": {
             "top_left": [
                 -211266.0,
@@ -5480,6 +5729,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 1.8689,
         "coordinates": {
             "top_left": [
                 -202050.0,
@@ -5502,6 +5752,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.3953,
         "coordinates": {
             "top_left": [
                 -211266.0,
@@ -5524,6 +5775,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307110731056_PANSHARP_ORT_PWOI_000373520_5_2_F_1_PS_R4C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 -202050.0,
@@ -5546,6 +5798,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307150707370_PANSHARP_ORT_PWOI_000373520_3_4_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.3681,
         "coordinates": {
             "top_left": [
                 163668.0,
@@ -5568,6 +5821,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307150707385_PANSHARP_ORT_PWOI_000373520_3_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0226,
         "coordinates": {
             "top_left": [
                 168504.0,
@@ -5590,6 +5844,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307150707388_PANSHARP_ORT_PWOI_000373520_3_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 12.6006,
         "coordinates": {
             "top_left": [
                 153300.0,
@@ -5612,6 +5867,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307150707388_PANSHARP_ORT_PWOI_000373520_3_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 8.8265,
         "coordinates": {
             "top_left": [
                 162516.0,
@@ -5634,6 +5890,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160726509_PANSHARP_ORT_PWOI_000373520_1_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.0446,
         "coordinates": {
             "top_left": [
                 -154434.0,
@@ -5656,6 +5913,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727072_PANSHARP_ORT_PWOI_000373512_20_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 43.785,
         "coordinates": {
             "top_left": [
                 -166560.0,
@@ -5678,6 +5936,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727072_PANSHARP_ORT_PWOI_000373512_20_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 8.5302,
         "coordinates": {
             "top_left": [
                 -157344.0,
@@ -5700,6 +5959,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727072_PANSHARP_ORT_PWOI_000373512_20_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.6682,
         "coordinates": {
             "top_left": [
                 -166560.0,
@@ -5722,6 +5982,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727224_PANSHARP_ORT_PWOI_000373512_19_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.5509,
         "coordinates": {
             "top_left": [
                 -178968.0,
@@ -5744,6 +6005,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727224_PANSHARP_ORT_PWOI_000373512_19_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 21.6752,
         "coordinates": {
             "top_left": [
                 -169752.0,
@@ -5766,6 +6028,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727374_PANSHARP_ORT_PWOI_000373512_18_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.6568,
         "coordinates": {
             "top_left": [
                 -191622.0,
@@ -5788,6 +6051,7 @@
     {
         "filename": "IMG_PNEO4_STD_202307160727374_PANSHARP_ORT_PWOI_000373512_18_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 6.2928,
         "coordinates": {
             "top_left": [
                 -182406.0,
@@ -5810,6 +6074,7 @@
     {
         "filename": "IMG_PNEO4_STD_202308050711466_PANSHARP_ORT_PWOI_000373512_16_4_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.3526,
         "coordinates": {
             "top_left": [
                 159708.0,
@@ -5832,6 +6097,7 @@
     {
         "filename": "IMG_PNEO4_STD_202308050711466_PANSHARP_ORT_PWOI_000373512_16_4_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.7121,
         "coordinates": {
             "top_left": [
                 159708.0,
@@ -5854,6 +6120,7 @@
     {
         "filename": "IMG_PNEO3_STD_202310140706547_PANSHARP_ORT_PWOI_000373568_12_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0587,
         "coordinates": {
             "top_left": [
                 260826.0,
@@ -5876,6 +6143,7 @@
     {
         "filename": "IMG_PNEO3_STD_202403180707038_PANSHARP_ORT_PWOI_000373576_3_3_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.3309,
         "coordinates": {
             "top_left": [
                 322344.0,
@@ -5898,6 +6166,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300711567_PANSHARP_ORT_PWOI_000373512_3_1_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 4.4882,
         "coordinates": {
             "top_left": [
                 4110.0,
@@ -5920,6 +6189,7 @@
     {
         "filename": "IMG_PNEO3_STD_202405300712136_PANSHARP_ORT_PWOI_000373512_2_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.0173,
         "coordinates": {
             "top_left": [
                 -18402.0,
@@ -5942,6 +6212,7 @@
     {
         "filename": "IMG_PNEO3_STD_202408050700065_PANSHARP_ORT_PWOI_000373576_15_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 427812.0,
@@ -5964,6 +6235,7 @@
     {
         "filename": "IMG_PNEO3_STD_202503010702450_PANSHARP_ORT_PWOI_000373591_3_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.7109,
         "coordinates": {
             "top_left": [
                 292332.0,
@@ -5986,6 +6258,7 @@
     {
         "filename": "IMG_PNEO4_STD_202304280707493_PANSHARP_ORT_PWOI_000373521_7_2_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 9.2398,
         "coordinates": {
             "top_left": [
                 76260.0,
@@ -6008,6 +6281,7 @@
     {
         "filename": "IMG_PNEO4_STD_202308050711466_PANSHARP_ORT_PWOI_000373512_16_4_F_1_PS_R4C1.tif",
         "crs": "EPSG:32739",
+        "area": 4.8189,
         "coordinates": {
             "top_left": [
                 159708.0,
@@ -6030,6 +6304,7 @@
     {
         "filename": "IMG_PNEO4_STD_202308050711501_PANSHARP_ORT_PWOI_000373512_16_3_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 0.9398,
         "coordinates": {
             "top_left": [
                 166836.0,
@@ -6052,6 +6327,7 @@
     {
         "filename": "IMG_PNEO4_STD_202308050711516_PANSHARP_ORT_PWOI_000373512_16_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.566,
         "coordinates": {
             "top_left": [
                 163368.0,
@@ -6074,6 +6350,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309160719428_PANSHARP_ORT_PWOI_000373512_9_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.0833,
         "coordinates": {
             "top_left": [
                 -234.0,
@@ -6096,6 +6373,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309210715506_PANSHARP_ORT_PWOI_000373512_8_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.9479,
         "coordinates": {
             "top_left": [
                 102006.0,
@@ -6118,6 +6396,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309210716008_PANSHARP_ORT_PWOI_000373512_7_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.282,
         "coordinates": {
             "top_left": [
                 75354.0,
@@ -6140,6 +6419,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309260712119_PANSHARP_ORT_PWOI_000373512_5_2_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 2.2069,
         "coordinates": {
             "top_left": [
                 117678.0,
@@ -6162,6 +6442,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309260712119_PANSHARP_ORT_PWOI_000373512_5_2_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 9.1564,
         "coordinates": {
             "top_left": [
                 126894.0,
@@ -6184,6 +6465,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309260712119_PANSHARP_ORT_PWOI_000373512_5_2_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 10.4092,
         "coordinates": {
             "top_left": [
                 117678.0,
@@ -6206,6 +6488,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309260712119_PANSHARP_ORT_PWOI_000373512_5_2_F_1_PS_R2C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 126894.0,
@@ -6228,6 +6511,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309260712119_PANSHARP_ORT_PWOI_000373512_5_2_F_1_PS_R3C1.tif",
         "crs": "EPSG:32739",
+        "area": 5.7502,
         "coordinates": {
             "top_left": [
                 117678.0,
@@ -6250,6 +6534,7 @@
     {
         "filename": "IMG_PNEO4_STD_202309260712119_PANSHARP_ORT_PWOI_000373512_5_2_F_1_PS_R3C2.tif",
         "crs": "EPSG:32739",
+        "area": 0.0,
         "coordinates": {
             "top_left": [
                 126894.0,
@@ -6272,6 +6557,7 @@
     {
         "filename": "IMG_PNEO4_STD_202310060707304_PANSHARP_ORT_PWOI_000373591_10_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 6.8408,
         "coordinates": {
             "top_left": [
                 119160.0,
@@ -6294,6 +6580,7 @@
     {
         "filename": "IMG_PNEO4_STD_202310110702026_PANSHARP_ORT_PWOI_000373576_5_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 9.0475,
         "coordinates": {
             "top_left": [
                 331836.0,
@@ -6316,6 +6603,7 @@
     {
         "filename": "IMG_PNEO4_STD_202310220710427_PANSHARP_ORT_PWOI_000373568_2_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 11.0077,
         "coordinates": {
             "top_left": [
                 270228.0,
@@ -6338,6 +6626,7 @@
     {
         "filename": "IMG_PNEO4_STD_202310220710427_PANSHARP_ORT_PWOI_000373568_2_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 8.0153,
         "coordinates": {
             "top_left": [
                 270228.0,
@@ -6360,6 +6649,7 @@
     {
         "filename": "IMG_PNEO4_STD_202311160652517_PANSHARP_ORT_PWOI_000373588_7_1_F_1_PS_R1C1.tif",
         "crs": "EPSG:32739",
+        "area": 18.7699,
         "coordinates": {
             "top_left": [
                 351330.0,
@@ -6382,6 +6672,7 @@
     {
         "filename": "IMG_PNEO4_STD_202311160652517_PANSHARP_ORT_PWOI_000373588_7_1_F_1_PS_R1C2.tif",
         "crs": "EPSG:32739",
+        "area": 10.8842,
         "coordinates": {
             "top_left": [
                 360546.0,
@@ -6404,6 +6695,7 @@
     {
         "filename": "IMG_PNEO4_STD_202311160652517_PANSHARP_ORT_PWOI_000373588_7_1_F_1_PS_R2C1.tif",
         "crs": "EPSG:32739",
+        "area": 18.0879,
         "coordinates": {
             "top_left": [
                 351330.0,
