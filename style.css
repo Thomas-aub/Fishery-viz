@@ -1047,3 +1047,21 @@ p, .scrolly-step p, .tooltip {
 .qgis-btn.primary:hover {
   background: var(--accent-dim);
 }
+
+
+/* =========================================================================
+   Navbar Logo Sizing and Alignment
+   ========================================================================= */
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-brand-logo {
+  height: 28px; /* Adjust this value to make it smaller or larger */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}

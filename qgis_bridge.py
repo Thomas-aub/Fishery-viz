@@ -7,7 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-PANSHARPENED_DIR = "/mnt/DATA/thomas/data_center/Madagascar/pansharpened"
+PANSHARPENED_DIR = "/mnt/DATA/thomas/data_center/Madagascar/data/inference/enhanced"
 GEOJSON_DIR = "/mnt/DATA/thomas/data_center/Madagascar/data/inference/geojson"
 
 @app.route('/open-qgis', methods=['POST'])
@@ -28,7 +28,7 @@ def open_qgis():
                 matching_tifs.append(os.path.join(root, f))
 
     if not matching_tifs:
-        return jsonify({"error": f"TIF file matching '{base_name}' not found in pansharpened folder."}), 404
+        return jsonify({"error": f"TIF file matching '{base_name}' not found in enhanced folder."}), 404
 
     tif_path = matching_tifs[0]
 
@@ -44,10 +44,27 @@ def open_qgis():
 
     geojson_path = matching_geojson[0]
 
-    # --- 3. Corrected PyQGIS Auto-Styling Script ---
+    # --- 3. PyQGIS Auto-Styling Script with Distinct Class Outlines ---
     script_path = os.path.join("/tmp", "qgis_auto_style.py")
-    pyqgis_code = f"""
-from qgis.core import QgsProject, QgsRasterLayer, QgsVectorLayer, QgsCategorizedSymbolRenderer, QgsRendererCategory, QgsSymbol, QgsContrastEnhancement, QgsRasterRange
+    
+    # Using a normal string instead of an f-string to avoid formatting conflicts
+    pyqgis_code = """
+from qgis.core import (
+    QgsProject, QgsRasterLayer, QgsVectorLayer, 
+    QgsCategorizedSymbolRenderer, QgsRendererCategory, 
+    QgsSymbol, QgsContrastEnhancement, QgsRasterRange
+)
+from qgis.PyQt.QtGui import QColor
+
+# Distinct color palette for different class_ids
+palette = [
+    QColor(37, 99, 235),   # Blue (#2563eb)
+    QColor(217, 119, 6),   # Orange (#d97706)
+    QColor(5, 150, 105),   # Green (#059669)
+    QColor(224, 32, 30),   # Red (#e0201e)
+    QColor(147, 51, 234),  # Purple
+    QColor(219, 39, 119)   # Pink
+]
 
 layers = QgsProject.instance().mapLayers().values()
 for layer in layers:
@@ -66,7 +83,7 @@ for layer in layers:
                     elif band == renderer.blueBand():
                         renderer.setBlueContrastEnhancement(ce)
         
-        # Set additional NoData value = 0 (wrapped in a list)
+        # Set additional NoData value = 0
         provider = layer.dataProvider()
         if provider:
             for b in range(1, layer.bandCount() + 1):
@@ -74,12 +91,29 @@ for layer in layers:
         layer.triggerRepaint()
         
     elif layer.type() == QgsVectorLayer.VectorLayer and 'geojson' in layer.source().lower():
-        # Apply Categorized renderer using 'class_id' field
+        # Apply Categorized renderer using 'class_id' field with Unique Outline styling
         if layer.fields().indexOf('class_id') != -1:
             categories = []
             unique_values = layer.uniqueValues(layer.fields().indexOf('class_id'))
-            for val in unique_values:
+            
+            for i, val in enumerate(unique_values):
                 symbol = QgsSymbol.defaultSymbol(layer.geometryType())
+                
+                if symbol.symbolLayerCount() > 0:
+                    symbolLayer = symbol.symbolLayer(0)
+                    # Transparent fill (Alpha = 0)
+                    if hasattr(symbolLayer, 'setFillColor'):
+                        symbolLayer.setFillColor(QColor(0, 0, 0, 0))
+                    
+                    # Assign a distinct border color per class_id from the palette
+                    if hasattr(symbolLayer, 'setStrokeColor'):
+                        stroke_color = palette[i % len(palette)]
+                        symbolLayer.setStrokeColor(stroke_color)
+                    
+                    # Optional: Adjust outline stroke width for visibility
+                    if hasattr(symbolLayer, 'setStrokeWidth'):
+                        symbolLayer.setStrokeWidth(0.8)
+                
                 category = QgsRendererCategory(val, symbol, str(val))
                 categories.append(category)
             
@@ -88,6 +122,7 @@ for layer in layers:
                 layer.setRenderer(renderer)
             layer.triggerRepaint()
 """
+
     with open(script_path, "w") as f:
         f.write(pyqgis_code)
 
