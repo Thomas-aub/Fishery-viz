@@ -375,6 +375,46 @@ function buildDensityScale(visibleImages) {
   return d3.scaleQuantile().domain(nonEmptyDensities).range(colors);
 }
 
+// Variable to keep track of the currently selected image target for QGIS
+let selectedImageForQgis = null;
+
+function initQgisModal() {
+  const modal = document.getElementById("qgis-modal");
+  const modalText = document.getElementById("qgis-modal-text");
+  const btnYes = document.getElementById("qgis-modal-yes");
+  const btnNo = document.getElementById("qgis-modal-no");
+
+  btnNo.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    selectedImageForQgis = null;
+  });
+
+  btnYes.addEventListener("click", async () => {
+    modal.classList.add("hidden");
+    if (!selectedImageForQgis) return;
+
+    try {
+      // Calls a local Python bridge server running on your machine
+      const response = await fetch("http://localhost:5000/open-qgis", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ filename: selectedImageForQgis })
+      });
+      
+      const result = await response.json();
+      if (!response.ok) {
+        alert("Error opening QGIS: " + (result.error || "Unknown error"));
+      }
+    } catch (err) {
+      console.error("Failed to connect to local QGIS bridge:", err);
+      alert("Could not connect to the local bridge server. Make sure your local Python server is running!");
+    }
+    
+    selectedImageForQgis = null;
+  });
+}
+
+// Inside your renderDensityView function, update the .on("click", ...) handler:
 function renderDensityView() {
   gPoints.selectAll("*").remove();
 
@@ -393,11 +433,18 @@ function renderDensityView() {
       showDensityTooltip(event, d);
     })
     .on("mousemove", moveTooltip)
-    .on("mouseleave", hideTooltip);
+    .on("mouseleave", hideTooltip)
+    .on("click", function(event, d) {
+      // Trigger the custom modal popup on click
+      selectedImageForQgis = d.filename;
+      const modal = document.getElementById("qgis-modal");
+      const modalText = document.getElementById("qgis-modal-text");
+      modalText.textContent = `Do you want to open "${d.filename}" in QGIS?`;
+      modal.classList.remove("hidden");
+    });
 
   buildDensityLegend(densityScale);
 }
-
 // =============================================================================
 // RENDERING — POINT VIEW
 // =============================================================================
@@ -537,6 +584,7 @@ async function init() {
   initConfidenceFilter();
   initProximityFilter();
   initViewSwitch();
+  initQgisModal();
   renderActiveView();
 
   const portGroups = gPorts

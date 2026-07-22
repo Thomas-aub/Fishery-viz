@@ -970,3 +970,80 @@ p, .scrolly-step p, .tooltip {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+
+/* =========================================================================
+   QGIS Modal Pop-up
+   ========================================================================= */
+
+.qgis-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.qgis-modal-overlay.hidden {
+  display: none;
+}
+
+.qgis-modal-card {
+  background: #ffffff;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  width: 380px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.qgis-modal-card h3 {
+  font-size: 18px;
+  font-weight: 650;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.qgis-modal-card p {
+  font-size: 13.5px;
+  color: var(--ink-dim);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.qgis-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.qgis-btn {
+  appearance: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.qgis-btn.secondary {
+  background: #e2e8f0;
+  color: var(--ink);
+}
+
+.qgis-btn.secondary:hover {
+  background: #cbd5e1;
+}
+
+.qgis-btn.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.qgis-btn.primary:hover {
+  background: var(--accent-dim);
+}
