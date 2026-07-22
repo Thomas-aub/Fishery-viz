@@ -1,0 +1,27 @@
+{
+  "name": "fishery-viz",
+  "version": "1.0.0",
+  "description": "Developed as part of a Master 2 research project at the MARBEC laboratory, this application visualizes spatial predictions of artisanal fishing effort in Madagascar using satellite imagery and deep learning. It addresses the statistical invisibility of traditional wooden canoes (pirogues) by mapping detection densities, filterable object classes, and marine conservation areas across the coastline.",
+  "main": "map.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-aub/Fishery-viz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Thomas-aub/Fishery-viz/issues"
+  },
+  "homepage": "https://github.com/Thomas-aub/Fishery-viz#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
