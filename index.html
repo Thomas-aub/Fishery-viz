@@ -47,13 +47,24 @@
     <div class="filter-label">Detected classes</div>
     <div id="class-filter-list"><!-- populated at runtime from the data --></div>
 
+    <div class="filter-label" style="margin-top: 14px; border-top: 1px solid var(--panel-border); padding-top: 12px;">Overlays</div>
+    <label class="filter-item" style="--swatch-color: #0d9488;">
+      <input type="checkbox" id="toggle-marine-areas" checked>
+      <span class="filter-swatch"></span>
+      <span class="filter-name">Marine Protected Areas</span>
+    </label>
+
     <div class="filter-label" style="margin-top: 14px; border-top: 1px solid var(--panel-border); padding-top: 12px;">Confidence Threshold</div>
     <div class="filter-slider-container" style="padding-top: 6px; padding-bottom: 4px;">
       <div style="display: flex; justify-content: space-between; font-size: 11.5px; color: var(--ink-dim); margin-bottom: 4px;">
         <span>Threshold</span>
-        <span id="confidence-value" style="font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink);">0.00</span>
+        <span id="confidence-value" style="font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink);">0.20</span>
       </div>
-      <input type="range" id="confidence-slider" min="0" max="1" step="0.01" value="0" style="width: 100%; accent-color: var(--accent); cursor: pointer;">
+      <input type="range" id="confidence-slider" min="0" max="1" step="0.01" value="0.20" style="width: 100%; accent-color: var(--accent); cursor: pointer;">
+      
+      <p style="font-size: 11px; color: var(--ink-dim); line-height: 1.4; margin-top: 6px;">
+        Confidence sets the minimum certainty threshold required to accept a detection. Higher values yield more reliable results, but risk omitting valid objects. 0.30 is often a balanced middle ground.
+      </p>
     </div>
 
     <div class="filter-label" style="margin-top: 14px; border-top: 1px solid var(--panel-border); padding-top: 12px;">Coastline Proximity</div>
@@ -77,70 +88,31 @@
     </div>
   </aside>
 
+  <!-- Left Sidebar Info Panel -->
+  <div id="info-panel" class="hidden">
+    <div class="info-panel-content">
+      <div class="step-eyebrow"><span class="telemetry">Academic Study &middot; MARBEC Laboratory</span></div>
+      <h2>Mapping Madagascar's Artisanal Fisheries</h2>
+      <p>
+        In Madagascar, small-scale fisheries represent a vital socio-economic and nutritional pillar for coastal communities, yet this sector remains largely invisible in official statistics, with only <strong>11% of traditional fishing canoes</strong> officially registered. This lack of data hinders effective environmental management and the evaluation of Marine Protected Areas.
+      </p>
+      <p>
+        To overcome this blind spot, a research study conducted at the MARBEC laboratory by Thomas Aubourg under the direction of David Mouillot demonstrates the potential of combining satellite imagery and deep learning. By leveraging premium <strong>Pl&eacute;iades Neo</strong> imagery at <strong>0.30&nbsp;m/pixel</strong> for manual annotation, an optimized <strong>YOLO26</strong> model using oriented bounding boxes was trained to capture the faint visual signatures of these tiny non-motorized wooden canoes.
+      </p>
+      <p>
+        Furthermore, a physics-based sensor degradation pipeline was established to transfer these insights down to standard <strong>Pl&eacute;iades</strong> imagery at <strong>0.50&nbsp;m/pixel</strong>, enabling cost-effective operational deployment. The optimized model achieves an encouraging <strong>mAP50 of 71.8%</strong> and an <strong>F1-score of 70.3%</strong> on the validation test corpus, laying the methodological foundation for national-scale mapping and sustainable coastal governance.
+      </p>
 
-<!-- Scrollytelling panel -->
-<div id="scrolly" class="hidden">
-  <div id="scrolly-panel">
-
-    <section class="scrolly-step" data-step="0" data-lon="49.35" data-lat="-18.5" data-scale="1" data-rotate="0">
-      <div class="step-eyebrow"><span class="telemetry">MDG &middot; 43 500&nbsp;km coastline</span></div>
-      <h2>An invisible fleet</h2>
-      <p>
-        Along Madagascar's coasts, tens of thousands of wooden pirogues leave shore
-        before dawn every day. They carry most of the country's small-scale catch &dash;
-        yet almost none of them appear in any official registry.
-      </p>
-      <p>
-        Fewer than <strong>11% of Malagasy fishing canoes</strong> are formally registered,
-        leaving fisheries managers, marine planners, and the blue economy agenda
-        without a reliable picture of where fishing effort actually happens.
-      </p>
-    </section>
-
-    <section class="scrolly-step" data-step="1" data-lon="49.4" data-lat="-18.2" data-scale="3.2" data-rotate="0">
-      <div class="step-eyebrow"><span class="telemetry">Pl&eacute;iades&nbsp;Neo &middot; 0.30&nbsp;m/px</span></div>
-      <h2>Seeing what isn't reported</h2>
-      <p>
-        To close this gap, we turn to Very High Resolution satellite imagery from
-        the <strong>Pl&eacute;iades Neo</strong> constellation, sharp enough to resolve
-        individual pirogues at <strong>0.30&nbsp;m per pixel</strong>.
-      </p>
-      <p>
-        A custom <strong>YOLO26</strong> oriented-bounding-box detection pipeline scans
-        each scene to locate and count vessels automatically, converting raw imagery
-        into a density map of fishing activity &dash; box by box, kilometre by kilometre.
-      </p>
-    </section>
-
-    <section class="scrolly-step" data-step="2" data-lon="49.29" data-lat="-12.28" data-scale="14" data-rotate="0">
-      <div class="step-eyebrow"><span class="telemetry">Zoom target &middot; Antsiranana</span></div>
-      <h2>Hotspots in the North</h2>
-      <p>
-        Density is far from uniform. Around <strong>Antsiranana (Diego&nbsp;Suarez)</strong>,
-        sheltered bays and a historic fishing culture concentrate pirogue traffic into
-        some of the highest densities measured anywhere on the coast.
-      </p>
-      <p>
-        These clusters point to where governance and monitoring resources would have
-        the greatest impact first.
-      </p>
-    </section>
-
-    <section class="scrolly-step" data-step="3" data-lon="46.32" data-lat="-15.72" data-scale="12" data-rotate="0">
-      <div class="step-eyebrow"><span class="telemetry">Zoom target &middot; Mahajanga</span></div>
-      <h2>A second cluster: Mahajanga</h2>
-      <p>
-        On the northwest coast, the port city of <strong>Mahajanga</strong> anchors another
-        dense concentration of activity, shaped by the wide estuary of the
-        Betsiboka River and easy access to productive coastal waters.
-      </p>
-      <p>
-        Comparing hotspots like these across the coastline is the first step toward a
-        national, satellite-derived map of artisanal fishing effort.
-      </p>
-    </section>
-
+      <!-- Internship Report Link Button -->
+      <div class="info-action">
+        <a href="./data/utils/Rapport de stage.pdf" target="_blank" rel="noopener noreferrer" class="info-report-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>View Internship Report</span>
+        </a>
+      </div>
+    </div>
   </div>
+
 </div>
 
 <footer id="site-footer">This code is from Thomas Aubourg @Marbec</footer>

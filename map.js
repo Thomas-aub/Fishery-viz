@@ -5,83 +5,56 @@
 const OBJECTS_URL = "./data/Consolidated_objects.json";
 const IMAGES_URL = "./data/Images_metadata.json";
 
-// Image footprints are stored in this projected CRS (UTM zone 39S, covers
-// the Madagascar coast). Detected-object coordinates are already WGS84
-// lon/lat, so footprints are the only geometry that needs reprojecting.
-// If a future export switches zones, update both constants together.
 const IMAGE_UTM_ZONE = 39;
 const IMAGE_UTM_HEMISPHERE = "S";
 
-// Local Madagascar boundary (island outline), replacing the previous
-// CDN-hosted world topojson. No external network call — this is the primary
-// base layer, drawn as an outline only (no fill), per data/utils/.
 const COUNTRY_BOUNDARY_ENABLED = true;
 const COUNTRY_BOUNDARY_URL = "./data/utils/mada_boundaries.geojson";
 
-// Optional: local admin-1 / region boundaries (light gray). No reliable,
-// lightweight, worldwide admin-1 dataset can be safely hotlinked client-side
-// (large files, or Git-LFS-backed URLs that browsers can't follow), so this
-// layer is generated once locally instead of fetched from a public CDN.
-//
-// Run `python fetch_regions.py` once (see that file) to generate
-// ./map/regions.geojson. The file may contain neighbouring countries too
-// (e.g. Tanzania, Mozambique) — REGION_COUNTRY_CODE filters it down to just
-// the one we're displaying.
 const REGIONS_ENABLED = true;
 const REGIONS_URL = "./data/utils/regions.geojson";
-const REGION_COUNTRY_CODE = "MDG"; // geoBoundaries shapeGroup (ISO3) to keep
+const REGION_COUNTRY_CODE = "MDG";
 
-// Main ports (CSV: Port_Name, Latitude, Longitude, Port_Type).
 const PORTS_ENABLED = true;
 const PORTS_URL = "./data/utils/main_ports.csv";
-// Ports are sized well above detection points (POINT_RADIUS = 2.2px) so
-// they read as a distinct, always-visible layer at any zoom level,
-// including the fully-zoomed-out country view (k=1 at reset).
-const PORT_DOT_RADIUS = 7; // px, kept constant across zoom levels
-const PORT_LABEL_FONT_SIZE = 13; // px, kept constant across zoom levels
+const PORT_DOT_RADIUS = 7;
+const PORT_LABEL_FONT_SIZE = 13;
 
-// Detected object classes. class_id is the only key present in the raw
-// data — names/colors are supplied here since the source JSON carries no
-// label field.
+const MARINE_AREAS_URL = "./data/utils/Madagascar_Marine_Conservation_Areas.geojson";
+
 const CLASSES = {
   0: { name: "Pirogue", color: "#2563eb" },
   1: { name: "Small motorboat", color: "#d97706" },
   2: { name: "Other boat", color: "#059669" },
 };
 
-// Density choropleth: pale yellow (least dense) -> strong red (most dense),
-// split into 7 quantile bins (see buildDensityScale).
 const DENSITY_COLOR_RAMP = d3.interpolateRgbBasis([
-  "#fef9c3", // pale yellow
+  "#fef9c3",
   "#fde68a",
   "#fb923c",
   "#ef4444",
-  "#b91c1c", // strong red
+  "#b91c1c",
 ]);
 const DENSITY_BIN_COUNT = 7;
-const DENSITY_EMPTY_COLOR = "#e5e7eb"; // neutral gray for zero-count images
+const DENSITY_EMPTY_COLOR = "#e5e7eb";
 
-const POINT_RADIUS = 2.2; // px, kept constant across zoom levels
-const PADDING_RATIO = 0.12; // extra breathing room around the data extent
+const POINT_RADIUS = 2.2;
+const PADDING_RATIO = 0.12;
 
 // =============================================================================
 // GEO HELPERS
 // =============================================================================
 
-// Minimal closed-form UTM -> WGS84 inverse projection (Karney/Snyder series),
-// scoped to a single fixed zone/hemisphere (see IMAGE_UTM_ZONE above). A full
-// projection library (e.g. proj4js) would be overkill for reprojecting ~300
-// static rectangle corners once at load time.
 function utmToWgs84(easting, northing, zone, hemisphere) {
-  const a = 6378137.0; // WGS84 semi-major axis (m)
-  const f = 1 / 298.257223563; // WGS84 flattening
-  const k0 = 0.9996; // UTM scale factor
+  const a = 6378137.0;
+  const f = 1 / 298.257223563;
+  const k0 = 0.9996;
   const e2 = f * (2 - f);
   const ePrime2 = e2 / (1 - e2);
 
   let y = northing;
-  if (hemisphere === "S") y -= 10000000.0; // false northing for southern zones
-  const x = easting - 500000.0; // false easting
+  if (hemisphere === "S") y -= 10000000.0;
+  const x = easting - 500000.0;
 
   const e1 = (1 - Math.sqrt(1 - e2)) / (1 + Math.sqrt(1 - e2));
   const M = y / k0;
@@ -123,14 +96,13 @@ function utmToWgs84(easting, northing, zone, hemisphere) {
         120) /
     cosPhi1;
 
-  const lonOrigin = (zone - 1) * 6 - 180 + 3; // central meridian of the zone
+  const lonOrigin = (zone - 1) * 6 - 180 + 3;
   return [
     lonOrigin + (lon * 180) / Math.PI,
     (lat * 180) / Math.PI,
   ];
 }
 
-// Fallback plain width x height ground area calculation in meters
 function utmRectangleAreaKm2(coords) {
   const { top_left, top_right, bottom_left } = coords;
   const widthM = Math.hypot(top_right[0] - top_left[0], top_right[1] - top_left[1]);
@@ -150,12 +122,12 @@ function imageFootprintToGeoJson(coords) {
 // STATE
 // =============================================================================
 
-let objects = []; // raw detections, WGS84 lon/lat
-let images = []; // image footprints with precomputed geometry + area
-let activeView = "density"; // "density" | "points"
+let objects = [];
+let images = [];
+let activeView = "density";
 let activeClassIds = new Set(Object.keys(CLASSES).map(Number));
-let activeProximityFilter = "all"; // "all" | "50m" | "100m" | "1km"
-let minConfidence = 0; // Minimum confidence filter threshold
+let activeProximityFilter = "all";
+let minConfidence = 0.20;
 
 const container = document.getElementById("map-container");
 const svg = d3.select("#map");
@@ -164,10 +136,12 @@ const tooltip = d3.select("#tooltip");
 const gRoot = svg.append("g").attr("class", "root");
 const gBasemapCountries = gRoot.append("g").attr("class", "basemap-countries");
 const gBasemapProvinces = gRoot.append("g").attr("class", "basemap-provinces");
+const gMarineAreas = gRoot.append("g").attr("class", "marine-areas");
 const gBoxes = gRoot.append("g").attr("class", "boxes");
 const gPoints = gRoot.append("g").attr("class", "points");
 const gPorts = gRoot.append("g").attr("class", "ports");
 
+let marineAreasGeo = null;
 let width = 0;
 let height = 0;
 let projection = null;
@@ -219,27 +193,20 @@ async function loadData() {
       filename: img.filename,
       stem: stripExtension(img.filename),
       geojson,
-      // Directly consume the precomputed area from Python, with fallback to box calculation
       areaKm2: img.area !== undefined ? img.area : utmRectangleAreaKm2(img.coordinates),
     };
-  });
+  }).filter((img) => img.areaKm2 > 0);
 
   return true;
 }
 
 function recomputeFilteredData() {
   const visibleObjects = objects.filter((o) => {
-    // 1. Filter by detected classes
     if (!activeClassIds.has(o.class_id)) return false;
-
-    // 2. Filter by minimum confidence threshold[cite: 20]
     if (o.confidence !== undefined && o.confidence < minConfidence) return false;
-
-    // 3. Filter by proximity radio option (must be true)
     if (activeProximityFilter !== "all") {
       if (!o[activeProximityFilter]) return false;
     }
-
     return true;
   });
 
@@ -351,11 +318,19 @@ function initConfidenceFilter() {
   const valueDisplay = document.getElementById("confidence-value");
   if (!slider) return;
 
+  function updateSliderBackground(val) {
+    const percent = val * 100;
+    slider.style.background = `linear-gradient(to right, #fb923c ${percent}%, var(--land-border) ${percent}%)`;
+  }
+
+  updateSliderBackground(minConfidence);
+
   slider.addEventListener("input", function () {
     minConfidence = parseFloat(this.value);
     if (valueDisplay) {
       valueDisplay.textContent = minConfidence.toFixed(2);
     }
+    updateSliderBackground(minConfidence);
     renderActiveView();
   });
 }
@@ -430,7 +405,6 @@ function renderDensityView() {
 function renderPointsView(visibleObjects) {
   gBoxes.selectAll("path").attr("fill-opacity", 0).style("pointer-events", "none");
 
-  // Get active zoom scale factor k so points don't render huge when re-rendered while zoomed in
   const transform = d3.zoomTransform(svg.node());
   const k = transform ? transform.k : 1;
 
@@ -491,11 +465,13 @@ async function init() {
   const dataLoaded = await loadData();
   if (!dataLoaded) return;
 
-  const [boundaryGeo, regionsGeo, portsRows] = await Promise.all([
+  const [boundaryGeo, regionsGeo, portsRows, marineAreasGeoJson] = await Promise.all([
     COUNTRY_BOUNDARY_ENABLED ? d3.json(COUNTRY_BOUNDARY_URL).catch(() => null) : Promise.resolve(null),
     REGIONS_ENABLED ? d3.json(REGIONS_URL).catch(() => null) : Promise.resolve(null),
     PORTS_ENABLED ? d3.csv(PORTS_URL).catch(() => []) : Promise.resolve([]),
+    d3.json(MARINE_AREAS_URL).catch(() => null),
   ]);
+  marineAreasGeo = marineAreasGeoJson;
   ports = portsRows.map((row) => ({
     name: row.Port_Name,
     type: row.Port_Type,
@@ -511,7 +487,6 @@ async function init() {
   );
   path = d3.geoPath(projection);
 
-  // --- Basemap: Madagascar boundary, local file, outline only (no fill) ---
   if (boundaryGeo) {
     const boundaryFeatures =
       boundaryGeo.type === "Topology"
@@ -530,7 +505,6 @@ async function init() {
     console.warn(`[map.js] Could not load ${COUNTRY_BOUNDARY_URL}.`);
   }
 
-  // --- Basemap: admin-1 regions/provinces (light gray), filtered to REGION_COUNTRY_CODE ---
   if (regionsGeo) {
     const allRegionFeatures =
       regionsGeo.type === "Topology"
@@ -542,13 +516,29 @@ async function init() {
     gBasemapProvinces.selectAll("path").data(regionFeatures).join("path").attr("class", "region-border").attr("d", path);
   }
 
+  if (marineAreasGeo) {
+    gMarineAreas
+      .selectAll("path.marine-area-polygon")
+      .data(marineAreasGeo.features)
+      .join("path")
+      .attr("class", "marine-area-polygon")
+      .attr("d", path)
+      .append("title")
+      .text(d => `${d.properties.NAME || 'Protected Area'} (${d.properties.DESIG_ENG || 'Conservation Area'})`);
+  }
+
+  d3.select("#toggle-marine-areas").on("change", function() {
+    gMarineAreas.style("display", this.checked ? null : "none");
+  });
+  
+  gMarineAreas.style("display", null);
+
   buildClassFilter();
   initConfidenceFilter();
   initProximityFilter();
   initViewSwitch();
   renderActiveView();
 
-  // --- Main ports: small red dot + label, fixed screen-space size ---
   const portGroups = gPorts
     .selectAll("g.port")
     .data(ports)
@@ -569,7 +559,6 @@ async function init() {
     .style("font-size", `${PORT_LABEL_FONT_SIZE}px`)
     .text((d) => d.name);
 
-  // --- Zoom / pan ---
   zoomBehavior = d3.zoom()
     .scaleExtent([0.6, 60])
     .on("zoom", (event) => {
@@ -578,6 +567,7 @@ async function init() {
       gBoxes.selectAll("path").attr("stroke-width", 0.6 / k);
       gBasemapCountries.selectAll(".country-border").attr("stroke-width", 1 / k);
       gBasemapProvinces.selectAll("path").attr("stroke-width", 0.6 / k);
+      gMarineAreas.selectAll(".marine-area-polygon").attr("stroke-width", 1.2 / k); 
       gPoints.selectAll("circle").attr("r", POINT_RADIUS / k).attr("stroke-width", 0.5 / k);
       gPorts.selectAll(".port-dot").attr("r", PORT_DOT_RADIUS / k);
       gPorts
@@ -594,7 +584,7 @@ async function init() {
   d3.select("#zoom-reset").on("click", () => svg.transition().duration(400).call(zoomBehavior.transform, d3.zoomIdentity));
 
   currentExtentPolygon = extentPolygon;
-  initScrollytelling();
+  initNav();
 }
 
 function computeExtent(imgs) {
@@ -627,6 +617,7 @@ let currentExtentPolygon = null;
 function redraw() {
   gBasemapCountries.selectAll("path.country-border").attr("d", path);
   gBasemapProvinces.selectAll("path").attr("d", path);
+  gMarineAreas.selectAll("path.marine-area-polygon").attr("d", path);
   gBoxes.selectAll("path").attr("d", (d) => path(d.geojson));
 
   const transform = d3.zoomTransform(svg.node());
@@ -650,97 +641,34 @@ window.addEventListener("resize", () => {
   getSize();
   projection.fitExtent([[16, 16], [width - 16, height - 16]], currentExtentPolygon);
   redraw();
-  if (typeof updateScrollyMapWidth === "function") updateScrollyMapWidth();
 });
 
 // =============================================================================
-// TOP NAV + PAGE CHROME
+// TOP NAV + INFO PANEL TOGGLE
 // =============================================================================
 
 function initNav() {
   const navMap = document.getElementById("nav-map");
   const navInfo = document.getElementById("nav-info");
-  const scrolly = document.getElementById("scrolly");
+  const infoPanel = document.getElementById("info-panel");
   const pageTitle = document.getElementById("page-title");
 
   function showMapMode() {
     navMap.classList.add("active");
     navInfo.classList.remove("active");
-    scrolly.classList.add("hidden");
+    infoPanel.classList.add("hidden");
     pageTitle.classList.remove("faded");
-    if (svg && zoomBehavior) {
-      svg.transition().duration(500).call(zoomBehavior.transform, d3.zoomIdentity);
-    }
   }
 
   function showInfoMode() {
     navMap.classList.remove("active");
     navInfo.classList.add("active");
-    scrolly.classList.remove("hidden");
+    infoPanel.classList.remove("hidden");
     pageTitle.classList.add("faded");
-    scrolly.scrollTop = 0;
   }
 
   navMap.addEventListener("click", showMapMode);
   navInfo.addEventListener("click", showInfoMode);
 }
-
-// =============================================================================
-// SCROLLYTELLING
-// =============================================================================
-
-function flyTo(lon, lat, scale) {
-  if (!projection || !svg || !zoomBehavior) return;
-  const [x, y] = projection([lon, lat]);
-  const k = scale;
-  const panelEl = document.getElementById("scrolly-panel");
-  const panelWidth = panelEl ? panelEl.getBoundingClientRect().width : 0;
-  const visibleCenterX = panelWidth + (width - panelWidth) / 2;
-  const targetX = visibleCenterX - x * k;
-  const targetY = height / 2 - y * k;
-
-  const transform = d3.zoomIdentity.translate(targetX, targetY).scale(k);
-  svg.transition().duration(1100).ease(d3.easeCubicInOut).call(zoomBehavior.transform, transform);
-}
-
-function initScrollytelling() {
-  initNav();
-
-  const steps = document.querySelectorAll(".scrolly-step");
-  if (!steps.length) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          steps.forEach((s) => s.classList.remove("is-active"));
-          entry.target.classList.add("is-active");
-
-          const lon = parseFloat(entry.target.dataset.lon);
-          const lat = parseFloat(entry.target.dataset.lat);
-          const scale = parseFloat(entry.target.dataset.scale) || 1;
-          if (!Number.isNaN(lon) && !Number.isNaN(lat)) {
-            flyTo(lon, lat, scale);
-          }
-        }
-      });
-    },
-    {
-      root: document.getElementById("scrolly"),
-      threshold: 0.55,
-    }
-  );
-
-  steps.forEach((step) => observer.observe(step));
-}
-
-window.updateScrollyMapWidth = function updateScrollyMapWidth() {
-  const active = document.querySelector(".scrolly-step.is-active");
-  if (!active) return;
-  const lon = parseFloat(active.dataset.lon);
-  const lat = parseFloat(active.dataset.lat);
-  const scale = parseFloat(active.dataset.scale) || 1;
-  if (!Number.isNaN(lon) && !Number.isNaN(lat)) flyTo(lon, lat, scale);
-};
 
 init();
